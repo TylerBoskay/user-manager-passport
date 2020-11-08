@@ -2,6 +2,8 @@
 
 This is a boilerplate that can be used in literally almost any backend for Secure, but adaptable User Data storage, registration, login, and secure logout.
 
+**TO CONFIGURE MONGODB URI, EDIT './config/config,js' file. URL has been stripped from Git for security purposes.
+
 -Data storage is handled by MongoDB, and Mongoose handles Data Scheming.
 -Passport, and Express Session handle Session Storage/Handling, alongside JWT for encryption of Sessions to ensure security.
 -BCrypt is used for generating Password Hash's for secure storage.
