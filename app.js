@@ -7,9 +7,10 @@ const session = require('express-session');
 const flash = require('connect-flash');
 const passport = require('passport');
 require("./config/passport") (passport)
+const config = require('./config/config.js');
 
-//Mongoose
-mongoose.connect('mongodb+srv://tboskk-admin:Rocker245%21@cluster0.d89ar.gcp.mongodb.net/authen-app?retryWrites=true&w=majority',
+//Mongoose TODO: Separate Mongo Login to a config, and gitignore it.
+mongoose.connect(config.mongodb_uri,
 {
     useUnifiedTopology: true,
     useNewUrlParser: true
